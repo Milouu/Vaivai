@@ -5,15 +5,36 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VaïVan Tour 2017</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600" rel="stylesheet">
     <link rel="stylesheet" href="styles/foundation.min.css" />
     <link rel="stylesheet" href="styles/slick.css" />
-    <link rel="stylesheet" href="styles/slick-theme.css" />
+    <link rel="stylesheet" href="styles/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/csshake-little.min.css">
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">VaïVan Tour 2017</div>
+    </div>
+    <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li>
+            <img src="images/logo.png" alt="VaïVaï Logo">
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><a href="#">Produits</a></li>
+          <li><a href="#">Culture Coco</a></li>
+        </ul>
+      </div>
+    </div>
     <header id="header">
       <h1>Retrouvez le VaïVan et découvrez le vrai goût de la coco</h1>
-      <img id="truck" src="http://chefvlad.ca/img/camion.png" alt="VaïVan"/>
+      <img id="truck" class="shake-little shake-constant" src="images/vaivan.svg" alt="VaïVan"/>
     </header>
     <script type="text/javascript" src="scripts/vendor/jquery.js"></script>
     <script type="text/javascript" src="scripts/vendor/what-input.js"></script>

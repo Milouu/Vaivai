@@ -3,20 +3,35 @@ body {
   padding: 0;
 }
 
+.top-bar img {
+  height: 30px;
+  width: auto;
+}
+
 h1 {
   text-align: center;
-  font-family: helvetica;
+  font-family: 'dosis';
+  text-shadow: 1px 2px 3px rgba(0,0,0, 0.2);
+  color: #57a07d;
 }
 
-#header {
-  background-image: url('https://image.freepik.com/vecteurs-libre/rue-de-la-ville-dans-la-conception-plat_23-2147526868.jpg');
+header#header {
+  background-image: url('../images/paris.svg');
+  background-size: cover;
   background-repeat: repeat-x;
-  height: 626px;
+  height: 526px;
   position: relative;
+  text-align: center;
 }
 
-#header #truck {
+header#header h1 {
+  padding-top: 50px;
+}
+
+header#header #truck {
   position: absolute;
-  top: 144px;
-  transform: scaleX(-1);
+  bottom: 0;
+  width: 500px;
+  height: auto;
+  margin-left: -250px;
 }
