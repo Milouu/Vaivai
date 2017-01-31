@@ -29,13 +29,6 @@ body {
   padding-bottom: 0;
 }
 
-.title-bar button {
-  background-color: #000;
-}
-
-.title-bar-title {
-  color: #000;
-}
 
 header#header {
   background-image: url('../images/paris.svg');
@@ -74,9 +67,22 @@ header#header #truck {
 
 ***************************/
 
+h1{
+  text-align: center;
+}
+
+.woodDivider{
+  height: 50px;
+  background-image: url("../images/bois.jpg");
+  background-size: cover;
+}
+
 .activite {
   position: relative;
   margin-bottom: 10px;
+}
+.activite > img {
+  width: 100%;
 }
 
 .activite > h4 {
