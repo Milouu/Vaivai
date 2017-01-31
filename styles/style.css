@@ -23,39 +23,58 @@ body {
 .dropdown.menu > li:hover > a {
   color: #fff;
 }
-
-.top-bar {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-
 header#header {
-  background-image: url('../images/paris.svg');
-  background-size: cover;
   background-repeat: repeat-x;
   height: 526px;
   position: relative;
-  text-align: center;
-  background-position: center;
-}
-
-header#header h1 {
-  text-align: center;
-  font-family: 'dosis';
-  display: inline-block;
-  color: #FFF;
-  background: #90cbb0;
-  margin-top: 60px;
-  padding: 0 10px;
-  border-radius: 4px;
 }
 
 header#header #truck {
   position: absolute;
+  
   bottom: 0;
   width: 500px;
   height: auto;
   left: 50%;
   margin-left: -250px;
 }
+
+
+/***************************
+
+            MAIN
+
+***************************/
+
+.activite {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.activite > h4 {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.humanitaire {
+  background-image: url(../images/ESF.png);
+  background-size: 600px 300px;
+  background-repeat: no-repeat;
+  background-position: top;
+  
+}
+
+.maSlide {
+  position : relative;
+}
+
+.maSlide > .informations {
+  position : absolute;
+  bottom : 0;
+  left : 0;
+  width : 100%;
+  background : rgba(255, 255, 255, 0.6);
+}
+
