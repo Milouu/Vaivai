@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: helvetica;
+}
+
+#header {
+  background-image: url('https://image.freepik.com/vecteurs-libre/rue-de-la-ville-dans-la-conception-plat_23-2147526868.jpg');
+  background-repeat: repeat-x;
+  height: 626px;
+  position: relative;
+}
+
+#header #truck {
+  position: absolute;
+  top: 144px;
+  transform: scaleX(-1);
+}
