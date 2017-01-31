@@ -8,11 +8,18 @@ h1 {
   font-family: helvetica;
 }
 
+/*************************
+
+          HEADER
+
+************************/
+
 #header {
   background-image: url('https://image.freepik.com/vecteurs-libre/rue-de-la-ville-dans-la-conception-plat_23-2147526868.jpg');
   background-repeat: repeat-x;
   height: 626px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 #header #truck {
@@ -20,3 +27,43 @@ h1 {
   top: 144px;
   transform: scaleX(-1);
 }
+
+
+/***************************
+
+            MAIN
+
+***************************/
+
+.activite {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.activite > h4 {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.humanitaire {
+  background-image: url(../images/ESF.png);
+  background-size: 600px 300px;
+  background-repeat: no-repeat;
+  background-position: top;
+  
+}
+
+.maSlide {
+  position : relative;
+}
+
+.maSlide > .informations {
+  position : absolute;
+  bottom : 0;
+  left : 0;
+  width : 100%;
+  background : rgba(255, 255, 255, 0.6);
+}
+
