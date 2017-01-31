@@ -3,6 +3,7 @@ body {
   padding: 0;
 }
 
+
 @font-face {
   font-family:"Big Bimbo NC";
   src: url("fonts/Big_Bimbo_NC.eot") format("eot"),
@@ -19,9 +20,24 @@ body {
 }
 
 
+/***************************
+
+          NAVBAR
+
+***************************/
+
 .title-bar, .top-bar, .top-bar ul {
   background: #fff;
 }
+
+.title-bar button {
+  background-color: #000;
+}
+
+.title-bar-title {
+  color: #000;
+}
+
 .top-bar img {
   height: 30px;
   width: auto;
@@ -52,6 +68,12 @@ body {
 *********************************/
 
 
+/***************************
+
+          HEADER
+
+***************************/
+
 header#header {
   background-image: url('../images/paris.svg');
   background-size: cover;
@@ -71,15 +93,20 @@ header#header h1 {
   margin-top: 60px;
   padding: 0 10px;
   border-radius: 4px;
+  width: auto;
+  max-width: 1170px;
+}
+
+header#header h1 br {
+  display: none;
 }
 
 header#header #truck {
   position: absolute;
   bottom: 0;
-  width: 500px;
-  height: auto;
+  max-width: 500px;
   left: 50%;
-  margin-left: -250px;
+  transform: translateX(-50%);
 }
 
 
@@ -106,9 +133,21 @@ main div#activites h1{
   font-family: Big Bimbo NC;
 }
 
-main div#activites div.activite {
+
+.divider{
+  height: 10px;
+  background: #232323;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.activite {
+
   position: relative;
   margin-bottom: 10px;
+}
+.activite > img {
+  width: 100%;
 }
 
 main div#activites div.activite > h4 {
@@ -119,12 +158,14 @@ main div#activites div.activite > h4 {
   font-family: 'dosis';
 }
 
+
 main div#humanitaire img {
   width: 600px;
 }
 
 main div#humanitaire > h1 {
   font-family: Big Bimbo NC;
+
 }
 
 .maSlide {
@@ -137,4 +178,16 @@ main div#humanitaire > h1 {
   left : 0;
   width : 100%;
   background : rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1336px) {
+  header#header h1 br {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  header#header {
+    height: 400px;
+  }
 }
