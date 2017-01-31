@@ -12,6 +12,15 @@ body {
 .title-bar, .top-bar, .top-bar ul {
   background: #fff;
 }
+
+.title-bar button {
+  background-color: #000;
+}
+
+.title-bar-title {
+  color: #000;
+}
+
 .top-bar img {
   height: 30px;
   width: auto;
@@ -114,7 +123,7 @@ h1{
   background-size: 600px 300px;
   background-repeat: no-repeat;
   background-position: top;
-
+  height: 300px;
 }
 
 .maSlide {
