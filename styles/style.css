@@ -3,6 +3,12 @@ body {
   padding: 0;
 }
 
+/***************************
+
+          NAVBAR
+
+***************************/
+
 .title-bar, .top-bar, .top-bar ul {
   background: #fff;
 }
@@ -30,6 +36,12 @@ body {
 }
 
 
+/***************************
+
+          HEADER
+
+***************************/
+
 header#header {
   background-image: url('../images/paris.svg');
   background-size: cover;
@@ -49,15 +61,20 @@ header#header h1 {
   margin-top: 60px;
   padding: 0 10px;
   border-radius: 4px;
+  width: auto;
+  max-width: 1170px;
+}
+
+header#header h1 br {
+  display: none;
 }
 
 header#header #truck {
   position: absolute;
   bottom: 0;
-  width: 500px;
-  height: auto;
+  max-width: 500px;
   left: 50%;
-  margin-left: -250px;
+  transform: translateX(-50%);
 }
 
 
@@ -110,4 +127,16 @@ h1{
   left : 0;
   width : 100%;
   background : rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1336px) {
+  header#header h1 br {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  header#header {
+    height: 400px;
+  }
 }
