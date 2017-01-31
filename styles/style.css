@@ -29,6 +29,13 @@ body {
   padding-bottom: 0;
 }
 
+.title-bar button {
+  background-color: #000;
+}
+
+.title-bar-title {
+  color: #000;
+}
 
 header#header {
   background-image: url('../images/paris.svg');
