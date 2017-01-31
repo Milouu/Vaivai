@@ -11,7 +11,7 @@ $(document).ready(function(){
 
   $('.monSlider').slick({
     autoplay : true,
-    autoplaySpeed : 2500,
+    autoplaySpeed : 1500,
     dots : true
   });
 });
