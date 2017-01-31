@@ -3,17 +3,32 @@ body {
   padding: 0;
 }
 
+.title-bar, .top-bar, .top-bar ul {
+  background: #fff;
+}
 .top-bar img {
   height: 30px;
   width: auto;
+  margin-top: 5px;
 }
 
-h1 {
-  text-align: center;
-  font-family: 'dosis';
-  text-shadow: 1px 2px 3px rgba(0,0,0, 0.2);
-  color: #57a07d;
+.dropdown.menu > li > a {
+  color: #90cbb0;
 }
+
+.top-bar-right .dropdown.menu > li:hover {
+  background: #90cbb0;
+}
+
+.dropdown.menu > li:hover > a {
+  color: #fff;
+}
+
+.top-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 
 header#header {
   background-image: url('../images/paris.svg');
@@ -22,10 +37,18 @@ header#header {
   height: 526px;
   position: relative;
   text-align: center;
+  background-position: center;
 }
 
 header#header h1 {
-  padding-top: 50px;
+  text-align: center;
+  font-family: 'dosis';
+  display: inline-block;
+  color: #FFF;
+  background: #90cbb0;
+  margin-top: 60px;
+  padding: 0 10px;
+  border-radius: 4px;
 }
 
 header#header #truck {
@@ -33,5 +56,6 @@ header#header #truck {
   bottom: 0;
   width: 500px;
   height: auto;
+  left: 50%;
   margin-left: -250px;
 }
