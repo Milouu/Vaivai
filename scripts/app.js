@@ -9,7 +9,7 @@ $(document).ready(function(){
     }, 10);
   });
 
-  $('.monSlider').slick({
+  $('.sliderLieux').slick({
     autoplay : true,
     autoplaySpeed : 2500,
     dots : true
