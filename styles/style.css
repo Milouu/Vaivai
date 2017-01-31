@@ -3,6 +3,22 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family:"Big Bimbo NC";
+  src: url("fonts/Big_Bimbo_NC.eot") format("eot"),
+       url("fonts/Big_Bimbo_NC.woff") format("woff"),
+       url("fonts/Big_Bimbo_NC.ttf") format("truetype"),
+       url("fonts/Big_Bimbo_NC.svg#BigBimboNC") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family : "Vaivai Handwritting";
+  src : url("fonts/vaivaiHandwritting.ttf" format("truetype"));
+}
+
+
 .title-bar, .top-bar, .top-bar ul {
   background: #fff;
 }
@@ -28,6 +44,12 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+/*********************************
+
+                HEADER
+
+*********************************/
 
 
 header#header {
@@ -67,6 +89,15 @@ header#header #truck {
 
 ***************************/
 
+main div#activites {
+  text-align: center;
+  background-image: url(../images/fondBois.jpg);
+}
+
+main div#activites h1{
+  font-family: Big Bimbo NC;
+}
+
 .activite {
   position: relative;
   margin-bottom: 10px;
@@ -76,7 +107,7 @@ header#header #truck {
   position: absolute;
   z-index: 99;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.5)
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .humanitaire {
