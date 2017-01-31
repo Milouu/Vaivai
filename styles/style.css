@@ -3,29 +3,40 @@ body {
   padding: 0;
 }
 
-h1 {
-  text-align: center;
-  font-family: helvetica;
+.title-bar, .top-bar, .top-bar ul {
+  background: #fff;
+}
+.top-bar img {
+  height: 30px;
+  width: auto;
+  margin-top: 5px;
 }
 
-/*************************
+.dropdown.menu > li > a {
+  color: #90cbb0;
+}
 
-          HEADER
+.top-bar-right .dropdown.menu > li:hover {
+  background: #90cbb0;
+}
 
-************************/
-
-#header {
-  background-image: url('https://image.freepik.com/vecteurs-libre/rue-de-la-ville-dans-la-conception-plat_23-2147526868.jpg');
+.dropdown.menu > li:hover > a {
+  color: #fff;
+}
+header#header {
   background-repeat: repeat-x;
-  height: 626px;
+  height: 526px;
   position: relative;
-  margin-bottom: 30px;
 }
 
-#header #truck {
+header#header #truck {
   position: absolute;
-  top: 144px;
-  transform: scaleX(-1);
+  
+  bottom: 0;
+  width: 500px;
+  height: auto;
+  left: 50%;
+  margin-left: -250px;
 }
 
 
