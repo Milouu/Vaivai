@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Starter Template</title>
+    <link rel="stylesheet" href="styles/foundation.min.css" />
+    <link rel="stylesheet" href="styles/slick.css" />
+    <link rel="stylesheet" href="styles/slick-theme.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+
+    <!--HEADER ******************************************** -->
+
+
+
+
+
+
+
+    <!--Slider présentation de Gamme  ******************************************** -->
+    <div class="row monSlider collumns large_5"> 
+
+
+      <div>
+        <img src="images/vaivai_huile-coco-desodorisee_200ml_2016_produit.png" alt="huile de coco">
+        <img src="images/buttesChaumont.jpg" alt="imageSlider">
+
+
+        <div class="informations">
+          <h2>Huile de coco</h2>
+          <p>Huile de coco vierge et biologique<br>
+
+
+            Une huile de coco vierge, pressée à froid, biologique, 100% végétale, idéale pour la cuisson de vos aliments ou en remplacement du beurre.</p>
+        </div>
+      </div>
+      <div class="monSlider"> <!--- 2ème slider-->
+
+        <img src="images/vaivai_coco_creation_citron-menthe-1L_2016_produit.png" alt="image 2">
+        <div class="informations">
+          <h2>Eau de coco</h2>
+          <p>Eau de coco Sélection fraîcheur<br>
+            L'eau de coco Vaïvaï Sélection Fraîcheur est 100% pur jus, sans aucun ajout et possède un goût naturellement plus prononcé de coco. 
+            .</p>
+        </div>
+      </div>
+      <div class="monSlider3"> <!--- 3ème slider-->
+        <img src="images/vaivai_petales-coco-nature_2016_produit.png" alt="image 3">
+        <div class="informations">
+          <h2>Pétales de Coco</h2>
+          <p>Pétales de coco « recette originale » <br>
+
+            Des pétales de chair de coco, simplement toastés au four, sans aucun ajout de matière grasse, pour un plaisir terriblement croustillant.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="présentation des produits">
+
+    </div>
+    <div class="row" data-equalizer="bloc_3">
+      <div class="columns large-4 fond_gris" data-equalizer-watch="bloc_3">
+        <img src="images/larecoltedesnoixdecoco.jpg" alt="image1" />
+
+        <!----infos complémentaire----> 
+        <p>
+
+        <h2>Comment c'est fait ?</h2> 
+        <h2>La récolte des noix de coco</h2>
+
+        Si la plupart des arbres fruitiers produisent leurs fruits à une saison spécifique, le cocotier offre des noix de coco toute l'année. Ainsi, en fonction de l'usage souhaité du fruit, c'est le stade de maturation de la noix qui déterminera le moment de la récolte.
+
+        </p>
+      <p>
+        Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.
+      </p>
+      <p>
+
+      </p>
+    </div>
+    <div class="columns large-4 fond_gris" data-equalizer-watch="bloc_3">
+      <img src="images/lapasteurisation.jpg" alt="image2" />
+      <h2> Comment c'est fait ? La flash pasteurisation
+      </h2>
+      <p>
+        Un procédé de conservation des jus de fruit plus doux, qui garde un maximum d'éléments nutritifs, sans dénaturer le goût des fruits.
+        En savoir plus sur cette étape
+      </p>
+    </div>
+    <div class="columns large-4 fond_gris" data-equalizer-watch="bloc_3">
+      <img src="images/Desrecettes.jpg" alt="image3" />
+      <h2> Comment c'est fait </h2>
+      <h4>Des recettes élaborées en France</h4>
+
+      Si nos jus de fruits viennent de l'autre bout du monde
+      et que l'inspiration de nos mélanges n'a pas de frontières,
+      l'élaboration de la recette finale est belle est bien 100% française !
+      ?
+      <p>
+        Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.
+      </p>
+    </div>
+    </div>
+  <script src="scripts/vendor/jquery.js"></script>
+  <script src="scripts/slick.js"></script>
+  <script src="scripts/vendor/what-input.js"></script>
+  <script src="scripts/vendor/foundation.js"></script>
+  <script>
+    $(document).foundation();
+
+    $(document).ready(function(){
+      $('.monSlider').slick({
+        autoplay : true,
+        autoplaySpeed : 2500,
+        dots : true,
+        arrows:true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      });
+
+    });
+  </script>
+  </body>
+</html>
