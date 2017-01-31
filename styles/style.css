@@ -14,8 +14,8 @@ body {
 }
 
 @font-face {
-  font-family : "Vaivai Handwritting";
-  src : url("fonts/vaivaiHandwritting.ttf" format("truetype"));
+  font-family : "Alamain1";
+  src: url("fonts/alamain1.ttf") format("truetype");
 }
 
 
@@ -89,33 +89,42 @@ header#header #truck {
 
 ***************************/
 
+main div#fondBois {
+  margin-top: 20px;
+  height: 500px;
+  background-image: url(../images/fondBois.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
 main div#activites {
   text-align: center;
-  background-image: url(../images/fondBois.jpg);
 }
 
 main div#activites h1{
   font-family: Big Bimbo NC;
 }
 
-.activite {
+main div#activites div.activite {
   position: relative;
   margin-bottom: 10px;
 }
 
-.activite > h4 {
+main div#activites div.activite > h4 {
   position: absolute;
   z-index: 99;
   bottom: 0;
   background: rgba(255, 255, 255, 0.5);
+  font-family: 'dosis';
 }
 
-.humanitaire {
-  background-image: url(../images/ESF.png);
-  background-size: 600px 300px;
-  background-repeat: no-repeat;
-  background-position: top;
+main div#humanitaire img {
+  width: 600px;
+}
 
+main div#humanitaire > h1 {
+  font-family: Big Bimbo NC;
 }
 
 .maSlide {
