@@ -5,9 +5,6 @@ setTimeout('$(".loadingTree").fadeOut(600);',1000);
 
 $(document).foundation();
 
-var isSlickLoaded = (typeof $.fn.Slick !== 'undefined');
-console.log(isSlickLoaded);
-
 $(document).ready(function(){
   $(function(){
     var x = 0;
@@ -30,3 +27,6 @@ $(document).ready(function(){
     slidesToScroll: 4,
   });
 });
+
+var isSlickLoaded = (typeof $.fn.Slick !== 'undefined');
+console.log(isSlickLoaded);
