@@ -59,6 +59,10 @@ body {
   src: url("fonts/alamain1.ttf") format("truetype");
 }
 
+h1, h2, h3, h4, h5, h5 {
+  font-family: 'big bimbo nc';
+}
+
 /***************************
 
           NAVBAR
