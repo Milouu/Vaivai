@@ -28,6 +28,7 @@ body {
 
 .title-bar, .top-bar, .top-bar ul {
   background: #fff;
+  height: 50px;
 }
 
 .title-bar button {
@@ -39,13 +40,21 @@ body {
 }
 
 .top-bar img {
-  height: 30px;
-  width: auto;
+  height: 40px;
   margin-top: 5px;
+  width: auto;
 }
 
-.dropdown.menu > li > a {
+.top-bar-right li {
+  line-height: 50px;
+}
+
+.top-bar-right li a {
   color: #90cbb0;
+  line-height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+
 }
 
 .top-bar-right .dropdown.menu > li:hover {
@@ -186,7 +195,7 @@ section>div.row h1{
 }
 
 .maSlide > img {
-  height: auto; 
+  height: auto;
   width: auto;
   min-height: 100%;
   min-width: 100%;
