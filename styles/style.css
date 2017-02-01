@@ -353,6 +353,25 @@ footer h3{
   width: 100% !important;
 }
 
+#fabrication {
+  text-align: center;
+}
+
+#fabrication p {
+  text-align: left;
+}
+
+#fabrication .question {
+  background: #90cbb0;
+  color: #000;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+#fabrication h2 {
+  font-size: 26px;
+}
 
 /***** page culturecoco
 
