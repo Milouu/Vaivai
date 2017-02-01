@@ -162,12 +162,22 @@ div#activites > .itemAct{
 }
 
 div#activites > .itemAct > div > img{
-  height: auto; 
+  height: auto;
   width: auto;
   min-height: 100%;
   min-width: 100%;
 }
 
+main div#activites div.activite > h4 {
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: 'dosis';
+  margin: 0px;
+  width: 100%;
+}
 
 main div#humanitaire img {
   width: 600px;
@@ -179,6 +189,7 @@ section>div.row h1{
   margin-bottom: 20px;
 }
 
+<<<<<<< Updated upstream
 .maSlide {
   position : relative;
   height: 400px;
@@ -201,7 +212,7 @@ section>div.row h1{
   height: 400px;
   padding: 150px 0;
   opacity: 1;
-  background : 	rgba(144, 203, 176, 0.7);
+  background : rgba(144, 203, 176, 0.7);
   transition-duration: 0.4s;
 }
 
@@ -214,8 +225,22 @@ iframe {
   border-style: none;
 }
 
-.informations{
-  font-size :7px;
+/**********************
+
+      PRODUITS
+
+**********************/
+
+.fondBois {
+  background: url('../images/fondBois.jpg');
+  background-size: contain;
 }
-.informations > h2{
-  font-size: 10px;}
+
+.gamme h2 {
+  text-align: center;
+}
+
+.gamme, .slick-track {
+  margin: 0;
+  width: 100% !important;
+}

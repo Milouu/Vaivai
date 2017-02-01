@@ -13,14 +13,12 @@ $(document).ready(function(){
     autoplaySpeed : 3000,
     dots : true
   });
-  $(document).ready(function(){
-    $('.sliderProduits').slick({
-      autoplay : true,
-      autoplaySpeed : 2500,
-      dots : true,
-      arrows:true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-    });
+  $('.sliderProduits').slick({
+    autoplay : false,
+    autoplaySpeed : 2500,
+    dots : true,
+    arrows:true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
   });
 });
