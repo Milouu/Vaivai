@@ -222,3 +222,9 @@ section>div.row h1{
 iframe {
   border-style: none;
 }
+
+.informations{
+  font-size :7px;
+}
+.informations > h2{
+  font-size: 10px;}
