@@ -85,11 +85,11 @@ body {
 }
 
 .dropdown.menu > li > a {
-  color: #90cbb0;
+  color: #a2ffc9;
 }
 
 .top-bar-right .dropdown.menu > li:hover {
-  background: #90cbb0;
+  background: #a2ffc9;
 }
 
 .dropdown.menu > li:hover > a {
@@ -122,7 +122,7 @@ header#header h1 {
   font-family: 'dosis';
   display: inline-block;
   color: #FFF;
-  background: #90cbb0;
+  background: #a2ffc9;
   margin-top: 60px;
   padding: 0 10px;
   border-radius: 4px;
@@ -173,7 +173,7 @@ header#header #truck {
 
 div.divider{
   height: 10px;
-  background: #90cbb0;
+  background: #a2ffc9;
 }
 
 section{
