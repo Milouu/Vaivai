@@ -372,3 +372,17 @@ li.fact {
 span.highlighted{
   color: #ed237a;
 }
+
+h3.adecouvriraussi{
+  border: none;
+  background-color: #ed237a;
+  height: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+.catchphrase{
+  font-family: "dosis";
+  text-align: center;
+  margin-top: 40px;
+}
