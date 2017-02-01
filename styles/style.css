@@ -1,6 +1,8 @@
-/***** Tree loading bar
+/******************
 
-*****************************/
+ANIMATION CHARGEMENT
+
+******************/
 .loadingTree {
   position: fixed;
   z-index:1000;
@@ -31,10 +33,11 @@ img.imgtree {
   height: 100%;
 }
 
+/***********
 
-/*******
+  GÉNÉRAL
 
-*********/
+***********/
 
 body {
   margin: 0;
