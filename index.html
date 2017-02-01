@@ -88,16 +88,6 @@
       </section>
       <!-- HUMANITAIRE -->
       <section id="fondRose">
-        <div class="row">
-          <div class="columns large-12" id="humanitaire">
-            <h1>Aidez nous, Aidez les</h1>
-            <img src="images/ESF.png">
-            <p>Chaque fois que vous utilisez le hashtag <span id="hashtag">#VaiVan</span> sur les réseaux sociaux, Vaïvaï verse 1 milliard à notre partenaire Enfants Sans Frontières.</p>
-          </div>
-        </div>
-      </section>
-      <!-- WHERE? -->
-      <section>
         <div class="row" data-equalizer="blocLieux">
           <h1>Suivez le Vaïvan à travers Paris !</h1>
           <!-- SLIDER -->
@@ -131,7 +121,20 @@
         </div>
         </div>
       </section>
+      <!-- WHERE? -->
+      <section>
+       <div class="row">
+          <div class="columns large-12" id="humanitaire">
+            <h1>Aidez nous, Aidez les</h1>
+            <img src="images/ESF.png">
+            <p>Chaque fois que vous utilisez le hashtag <span id="hashtag">#VaiVan</span> sur les réseaux sociaux, Vaïvaï verse 1 milliard à notre partenaire Enfants Sans Frontières.</p>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Je soutiens Enfance Sans frontière et le" data-hashtags="VaïVan" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </section>
     </main>
+    <div class="divider">
+    </div>
     <!-- FOOTER -->
     <footer>
       <h3>Nous sommes connectés !</h3>
@@ -150,5 +153,21 @@
   <script type="text/javascript" src="scripts/vendor/foundation.min.js"></script>
   <script type="text/javascript" src="scripts/vendor/slick.min.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+  }(document, "script", "twitter-wjs"));</script>
   </body>
 </html>
