@@ -28,7 +28,6 @@ body {
 
 .title-bar, .top-bar, .top-bar ul {
   background: #fff;
-  height: 50px;
 }
 
 .title-bar button {
@@ -40,21 +39,13 @@ body {
 }
 
 .top-bar img {
-  height: 40px;
-  margin-top: 5px;
+  height: 30px;
   width: auto;
+  margin-top: 5px;
 }
 
-.top-bar-right li {
-  line-height: 50px;
-}
-
-.top-bar-right li a {
+.dropdown.menu > li > a {
   color: #90cbb0;
-  line-height: 50px;
-  padding-top: 0;
-  padding-bottom: 0;
-
 }
 
 .top-bar-right .dropdown.menu > li:hover {
@@ -145,12 +136,24 @@ div.divider{
   background: #90cbb0;
 }
 
-section {
+section{
   padding: 30px 0;
   background: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
+}
+
+section:nth-child(2n) {
+  background: #001623;
+}
+
+section h1{
+  font-family: 'Big Bimbo NC';
+  color: #472611;
+  margin-bottom: 20px;
+}
+
+section:nth-child(2n) h1, section:nth-child(2n) p{
+  color: #fff;
 }
 
 div#activites {
@@ -162,33 +165,25 @@ div#activites > .itemAct{
 }
 
 div#activites > .itemAct > div > img{
-  height: auto; 
-  width: auto;
-  min-height: 100%;
-  min-width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
 }
-
 
 main div#humanitaire img {
   width: 600px;
 }
 
-section>div.row h1{
-  font-family: 'Big Bimbo NC';
-  color: #472611;
-  margin-bottom: 20px;
-}
-
 .maSlide {
   position : relative;
   height: 400px;
+  overflow: hidden;
 }
 
 .maSlide > img {
+  min-width: 100%;
+  min-height: 100%;
   height: auto;
   width: auto;
-  min-height: 100%;
-  min-width: 100%;
 }
 
 .maSlide > .informations {
@@ -213,9 +208,3 @@ section>div.row h1{
 iframe {
   border-style: none;
 }
-
-.informations{
-  font-size :7px;
-}
-.informations > h2{
-  font-size: 10px;}
