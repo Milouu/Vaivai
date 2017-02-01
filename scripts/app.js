@@ -11,7 +11,7 @@ $(document).ready(function(){
 
   $('.sliderLieux').slick({
     autoplay : true,
-    autoplaySpeed : 2500,
+    autoplaySpeed : 3000,
     dots : true
   });
 });
