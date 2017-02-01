@@ -188,7 +188,7 @@ section:nth-child(2n) {
 
 section h1{
   font-family: 'Big Bimbo NC';
-  color: #472611;
+  color: #001623;
   margin-bottom: 20px;
 }
 
@@ -205,10 +205,8 @@ div#activites > .itemAct{
 }
 
 div#activites > .itemAct > div > img{
-  height: auto;
-  width: auto;
-  min-height: 100%;
-  min-width: 100%;
+  height: 160px;
+  padding: 10px;
 }
 
 main div#activites div.activite > h4 {
