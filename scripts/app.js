@@ -19,7 +19,7 @@ $(document).ready(function(){
     dots : true
   });
   $('.sliderProduits').slick({
-    autoplay : false,
+    autoplay : true,
     autoplaySpeed : 2500,
     dots : true,
     arrows:true,

@@ -8,7 +8,7 @@
 img.imgtree {
   position: relative;
   z-index: 1;
-  width: 40%; 
+  width: 40%;
   height: 40%;
   vertical-align: bottom;
 }
@@ -79,13 +79,14 @@ body {
 }
 
 .top-bar img {
-  height: 30px;
+  height: 40px;
   width: auto;
   margin-top: 5px;
 }
 
 .dropdown.menu > li > a {
   color: #a2ffc9;
+  line-height: 30px;
 }
 
 .top-bar-right .dropdown.menu > li:hover {
@@ -99,6 +100,7 @@ body {
 .top-bar {
   padding-top: 0;
   padding-bottom: 0;
+  height: 50px;
 }
 
 /***************************
