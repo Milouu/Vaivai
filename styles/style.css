@@ -200,9 +200,6 @@ section>div.row h1{
   margin-bottom: 20px;
 }
 
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
 .maSlide {
   position : relative;
   height: 400px;
@@ -238,7 +235,6 @@ section>div.row h1{
 iframe {
   border-style: none;
 }
-<<<<<<< HEAD
 
 /**********************
 
@@ -255,9 +251,7 @@ iframe {
   text-align: center;
 }
 
-.gamme, .slick-track {
+.gamme, .gamme .slick-track {
   margin: 0;
   width: 100% !important;
 }
-=======
->>>>>>> origin/master
