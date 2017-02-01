@@ -185,7 +185,7 @@ section{
 }
 
 section:nth-child(2n) {
-  background: #001623;
+  background: url("../images/cocotierBG.png");
 }
 
 section h1{
@@ -207,8 +207,8 @@ div#activites > .itemAct{
 }
 
 div#activites > .itemAct > div > img{
-  height: 160px;
-  padding: 10px;
+  height: 170px;
+  padding: 15px;
 }
 
 main div#activites div.activite > h4 {
@@ -256,7 +256,6 @@ main #hashtag {
   width : 100%;
   height: 400px;
   padding: 150px 0;
-  opacity: 1;
   background : rgba(144, 203, 176, 0.7);
   transition-duration: 0.4s;
 }
@@ -268,6 +267,23 @@ main #hashtag {
 
 iframe {
   border-style: none;
+}
+
+footer{
+  background: #001623;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+footer img{
+  height: 30px;
+  margin: 0px 10px;
+}
+
+footer h3{
+  font-size: 16px;
+  padding-top: 40px;
 }
 
 /**********************
