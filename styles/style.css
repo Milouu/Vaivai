@@ -271,17 +271,30 @@ main #hashtag {
   font-family: 'dosis';
   position : absolute;
   bottom : 0;
-  left : 0;
-  width : 100%;
-  height: 400px;
-  padding: 150px 0;
+  padding: 0;
+  height: 100px;
+  width: 100%;
   background : rgba(144, 203, 176, 0.7);
-  transition-duration: 0.4s;
+  transition: 0.4s;
 }
 
 .maSlide > .informations:hover, .maSlide > img:hover + .informations {
-  padding: 0;
-  height: 100px;
+  padding: 150px 0;
+  height: 100%;
+}
+
+.maSlide > .informations > h4:nth-child(2n+1){
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transition: 0.4s;
+  font-size: 30px;
+}
+
+.maSlide > .informations:hover > h4:nth-child(2n+1), .maSlide > img:hover + .informations > h4:nth-child(2n+1){
+  bottom: 10px;
 }
 
 iframe {
