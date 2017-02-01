@@ -327,11 +327,15 @@ footer h3{
 
 .fondBois {
   background: url('../images/fondBois.jpg');
-  background-size: contain;
+  background-size: cover;
+  padding: 30px 0;
+  margin-bottom: 30px;
 }
 
-.gamme h2 {
+.produit h3 {
   text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 .gamme {
