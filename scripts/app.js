@@ -1,11 +1,11 @@
-
+// ANIMATIONS CHARGEMENT
 $(".emptyDiv").animate({"top": "-100%"},1000);
 setTimeout('$(".loadingTree").fadeOut(300);',700);
-
 
 $(document).foundation();
 
 $(document).ready(function(){
+  // DÉFILEMENT HEADER
   $(function(){
     var x = 0;
     setInterval(function(){
@@ -13,6 +13,7 @@ $(document).ready(function(){
       $('#header').css('background-position', x + 'px 0');
     }, 14);
   });
+  // SLIDERS
   $('.sliderLieux').slick({
     autoplay : true,
     autoplaySpeed : 3000,
@@ -42,7 +43,19 @@ $(document).ready(function(){
       }
     ]
   });
+  // BOUTON TWITTER
+  window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+    return t;
+  }(document, "script", "twitter-wjs"));
 });
-
-var isSlickLoaded = (typeof $.fn.Slick !== 'undefined');
-console.log(isSlickLoaded);
