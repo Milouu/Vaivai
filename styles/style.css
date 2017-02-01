@@ -85,12 +85,8 @@ body {
 }
 
 .dropdown.menu > li > a {
-<<<<<<< HEAD
   color: #90cbb0;
-=======
-  color: #a2ffc9;
   line-height: 30px;
->>>>>>> origin/master
 }
 
 .top-bar-right .dropdown.menu > li:hover {
