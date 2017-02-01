@@ -1,3 +1,8 @@
+/* Animation cocotier
+$(".emptyDiv").animate({"margin-top": "-=100vh"},1000);
+setTimeout('$(".loadingTree").fadeOut(600);',1000);
+*/
+
 $(document).foundation();
 
 $(document).ready(function(){
