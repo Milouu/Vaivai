@@ -226,6 +226,13 @@ main div#humanitaire img {
   width: 600px;
 }
 
+main #hashtag {
+  background-color: #90cbb0;
+  border-radius: 2px;
+  padding: 6px;
+  color: #001623;
+}
+
 .maSlide {
   position : relative;
   height: 400px;
