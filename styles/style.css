@@ -145,12 +145,37 @@ header#header h1 br {
   display: none;
 }
 
+header#header #truckContainer {
+  position: absolute;
+  /* background pour forcer à ne pas collapser */
+  background: rgba(255, 0, 0, 0);
+  height: 300px;
+  width: 500px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header#header #truckContainer div {
+  position: relative;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0);
+  height: 300px;
+  width: 500px;
+}
+
 header#header #truck {
   position: absolute;
   bottom: 0;
+  left: 0;
+  height: auto;
+  width: auto;
   max-width: 500px;
-  left: 50%;
-  transform: translateX(-50%);
+  -webkit-animation-name: shake;
+	-webkit-animation-duration: 1.3s;
+	-webkit-transform-origin: 0% 5%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 }
 
 @media screen and (max-width: 1336px) {
@@ -164,14 +189,14 @@ header#header #truck {
     height: 400px;
   }
 
-  img#truck {
-    height: 200px;
+  #truckContainer, #truckContainer div, #truckContainer img {
+    max-height: 200px;
   }
 }
 
 @media screen and (max-width: 410px) {
-  img#truck {
-    height: 160px;
+  #truckContainer, #truckContainer div, #truckContainer img {
+    max-height: 160px;
   }
 }
 
@@ -446,4 +471,24 @@ h3.adecouvriraussi{
   font-family: "dosis";
   text-align: center;
   margin-top: 40px;
+}
+
+/*******************
+
+    ANIMATION
+
+*******************/
+
+@-webkit-keyframes shake {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
