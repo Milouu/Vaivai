@@ -216,6 +216,18 @@ div#activites > .itemAct > div > img{
   font-family: 'big bimbo nc';
 }
 
+.informationsAct p {
+  font-size: 20px;
+}
+
+.informations h2 {
+  font-family: 'big bimbo nc';
+}
+
+.informations h4 {
+  font-family: 'dosis';
+}
+
 main div#activites div.activite > h4 {
   text-align: center;
   position: absolute;
@@ -287,8 +299,9 @@ footer img{
 }
 
 footer h3{
-  font-size: 16px;
+  font-size: 20px;
   padding-top: 40px;
+  font-family: 'dosis';
 }
 
 /**********************
