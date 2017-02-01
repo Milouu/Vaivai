@@ -102,6 +102,28 @@ header#header #truck {
   transform: translateX(-50%);
 }
 
+@media screen and (max-width: 1336px) {
+  header#header h1 br {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  header#header {
+    height: 400px;
+  }
+
+  img#truck {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  img#truck {
+    height: 160px;
+  }
+}
+
 
 /***************************
 
@@ -188,14 +210,6 @@ section>div.row h1{
   opacity: 0;
 }
 
-@media screen and (max-width: 1336px) {
-  header#header h1 br {
-    display: inline;
-  }
-}
-
-@media screen and (max-width: 40em) {
-  header#header {
-    height: 400px;
-  }
+iframe {
+  border-style: none;
 }
