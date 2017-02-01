@@ -2,35 +2,33 @@
 
 *****************************/
 .loadingTree {
-  position: relative;
+  position: fixed;
+  z-index:1000;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #FFFFFF;
 }
 
 img.imgtree {
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 1001;
   width: 40%;
-  height: 40%;
+  height: auto;
+  bottom:0;
+  left:40%;
   vertical-align: bottom;
 }
 
 .emptyDiv {
-  top: 0px;
-  position: absolute;
+  position: fixed;
+  z-index: 1002;
   background-color: white;
-  z-index: 2;
   left: 0;
-  bottom: 0;
-  right: 0;
-  width: auto;
-  /* to keep proportions */
-  height: auto;
-  /* to keep proportions */
-  max-width: 100%;
-  /* not to stand out from div */
-  max-height: 100%;
-  /* not to stand out from div */
-  margin: auto auto 0;
-  /* position to bottom and center */
+  top: 0%;
+  width: 100%;
+  height: 100%;
 }
 
 
