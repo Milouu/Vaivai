@@ -165,7 +165,6 @@ div#activites > .itemAct{
 }
 
 div#activites > .itemAct > div > img{
-<<<<<<< HEAD
   height: auto;
   width: auto;
   min-height: 100%;
@@ -183,21 +182,8 @@ main div#activites div.activite > h4 {
   width: 100%;
 }
 
-=======
-  height: 100px;
-  margin-bottom: 10px;
-}
-
->>>>>>> origin/master
 main div#humanitaire img {
   width: 600px;
-}
-
-<<<<<<< HEAD
-section>div.row h1{
-  font-family: 'Big Bimbo NC';
-  color: #472611;
-  margin-bottom: 20px;
 }
 
 .maSlide {
