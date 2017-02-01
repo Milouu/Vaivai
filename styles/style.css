@@ -87,6 +87,7 @@ body {
   color: #90cbb0;
   padding: 0 10px;
   line-height: 50px;
+  text-transform: uppercase;
 }
 
 .top-bar-right .dropdown.menu > li:hover {
@@ -211,6 +212,10 @@ div#activites > .itemAct > div > img{
   padding: 15px;
 }
 
+.informationsAct h4 {
+  font-family: 'big bimbo nc';
+}
+
 main div#activites div.activite > h4 {
   text-align: center;
   position: absolute;
@@ -304,6 +309,7 @@ footer h3{
 .gamme {
   display: block;
 }
+
 .produit {
   float: left;
   width: 25%;
@@ -314,6 +320,8 @@ footer h3{
   margin: 0;
   width: 100% !important;
 }
+
+
 /***** page culturecoco
 
 *****************************/

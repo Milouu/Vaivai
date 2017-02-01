@@ -11,7 +11,7 @@ $(document).ready(function(){
     setInterval(function(){
       x-=1;
       $('#header').css('background-position', x + 'px 0');
-    }, 15);
+    }, 14);
   });
   $('.sliderLieux').slick({
     autoplay : true,
