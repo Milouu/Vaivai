@@ -241,8 +241,9 @@ main div#activites div.activite > h4 {
   width: 100%;
 }
 
-main div#humanitaire img {
-  width: 600px;
+main section#humanitaire {
+  background: url("../images/ESF.jpg");
+  background-size: cover;
 }
 
 main #hashtag {
@@ -299,6 +300,12 @@ main #hashtag {
 
 iframe {
   border-style: none;
+}
+
+#g1{
+  height: 250px;
+  margin: 0 auto;
+  font-family: 'dosis';
 }
 
 footer{
