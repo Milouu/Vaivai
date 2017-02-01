@@ -86,7 +86,8 @@ body {
 
 .dropdown.menu > li > a {
   color: #90cbb0;
-  line-height: 30px;
+  padding: 0 10px;
+  line-height: 50px;
 }
 
 .top-bar-right .dropdown.menu > li:hover {
