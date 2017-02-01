@@ -361,6 +361,10 @@ footer h3{
   vertical-align: top;
 }
 
+#fabrication img {
+  width: 100%;
+}
+
 #fabrication p {
   text-align: left;
 }
@@ -377,11 +381,9 @@ footer h3{
   left: .9375rem;
 }
 
-#fabrication h3 {
-  font-size: 26px;
-}
+/****************************
 
-/***** page culturecoco
+      PAGE CULTURE COCO
 
 *****************************/
 
