@@ -85,24 +85,33 @@ h1, h2, h3, h4, h5, h5 {
   color: #000;
 }
 
+.top-bar-left {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+
 .top-bar img {
   height: 40px;
   width: auto;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .dropdown.menu > li > a {
-  color: #90cbb0;
   padding: 0 10px;
   line-height: 50px;
   text-transform: uppercase;
 }
 
-.top-bar-right .dropdown.menu > li:hover {
+.dropdown.menu > li:not(.selected) a {
+  color: #90cbb0
+}
+
+.top-bar-right .dropdown.menu > li:hover, .selected {
   background: #90cbb0;
 }
 
-.dropdown.menu > li:hover > a {
+.dropdown.menu > li:hover > a, .selected a {
   color: #fff;
 }
 
@@ -148,7 +157,6 @@ header#header h1 br {
 header#header #truckContainer {
   position: absolute;
   /* background pour forcer à ne pas collapser */
-  background: rgba(255, 0, 0, 0);
   height: 300px;
   width: 500px;
   bottom: 0;
@@ -159,7 +167,6 @@ header#header #truckContainer {
 header#header #truckContainer div {
   position: relative;
   margin: 0 auto;
-  background: rgba(255, 0, 0, 0);
   height: 300px;
   width: 500px;
 }
@@ -416,7 +423,6 @@ footer h3{
   line-height: 30px;
   position: absolute;
   top: 0;
-  left: .9375rem;
 }
 
 /****************************
