@@ -4,30 +4,6 @@ setTimeout('$(".loadingTree").fadeOut(300);',900);
 
 $(document).foundation();
 
-// QUIZZ
-var solutions = [true, true, false, true, false, false];
-var bonnesReponses = 0;
-function checkReponse(i, reponseQuestion) {
-  if (reponseQuestion == solutions[i]) {
-    $('#bonneReponse'+i).toggleClass('cache');
-    bonnesReponses++;
-  } else {
-    $('#mauvaiseReponse'+i).toggleClass('cache');
-  }
-  $('#reponse'+i).toggleClass('cache');
-  $('#question'+i).toggleClass('cache');
-  $('#imageQuizz'+i).toggleClass('cache');
-  $('.boutonQuizz'+i).toggleClass('cache');
-  if (bonnesReponses < 3) {
-    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous n'êtes pas encore un #CocoAddict !");
-  } else if (bonnesReponses < 5) {
-    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous y êtes presque un #CocoAddict !");
-  } else {
-    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes un #CocoAddict, bravo !");
-  }
-  $("div#resultatQuizz > a").attr('data-text', 'swag');
-}
-
 $(document).ready(function(){
   // DÉFILEMENT HEADER
   $(function(){
@@ -83,6 +59,37 @@ $(document).ready(function(){
     return t;
   }(document, "script", "twitter-wjs"));
 });
+
+// QUIZZ
+var solutions = [true, true, false, true, false, false];
+var bonnesReponses = 0;
+function checkReponse(i, reponseQuestion) {
+  if (reponseQuestion == solutions[i]) {
+    $('#bonneReponse'+i).toggleClass('cache');
+    bonnesReponses++;
+  } else {
+    $('#mauvaiseReponse'+i).toggleClass('cache');
+  }
+  $('#reponse'+i).toggleClass('cache');
+  $('#question'+i).toggleClass('cache');
+  $('#imageQuizz'+i).toggleClass('cache');
+  $('.boutonQuizz'+i).toggleClass('cache');
+  if (bonnesReponses < 3) {
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous n'êtes pas encore un #CocoAddict !");
+  } else if (bonnesReponses < 5) {
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes presque un #CocoAddict !");
+  } else {
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes un #CocoAddict, bravo !");
+  }
+  twi(bonnesReponses);
+}
+
+function twi(bonnesReponses){
+$('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? J'ai eu "+bonnesReponses+" bonnes réponses au quizz !");
+  console.log("c'est bon - "+bonnesReponses);
+    var testtweet = $('#twittquizz').attr('data-text')
+    console.log(testtweet);
+}
 
 // JAUGE
 var g1 = new JustGage({
