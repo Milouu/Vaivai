@@ -3,6 +3,7 @@ $(".emptyDiv").animate({"top": "-100%"},1000);
 setTimeout('$(".loadingTree").fadeOut(300);',900);
 
 $(document).foundation();
+window.alert('youhou');
 
 // QUIZZ
 var solutions = [true, false, true];
@@ -16,7 +17,7 @@ function checkReponse(i, reponseQuestion) {
   $('#question'+i).toggleClass('cache');
   $('#imageQuizz'+i).toggleClass('cache');
   $('.boutonQuizz'+i).toggleClass('cache');
-  
+
 }
 
 $(document).ready(function(){
