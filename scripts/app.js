@@ -23,7 +23,7 @@ function checkReponse(i, reponseQuestion) {
   } else if (bonnesReponses < 5) {
     $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous y êtes presque un #CocoAddict !");
   } else {
-    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous un #CocoAddict, bravo ! !");
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes un #CocoAddict, bravo !");
   }
 }
 
