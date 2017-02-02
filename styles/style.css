@@ -229,7 +229,7 @@ section{
   text-align: center;
 }
 
-section:nth-child(2n) {
+section#where {
   background: url("../images/cocotierBG.png");
 }
 
@@ -348,6 +348,28 @@ iframe {
   height: 250px;
   margin: 0 auto;
   font-family: 'dosis';
+}
+
+section#linkPages > div > div{
+  text-align: center;
+  margin: 50px 0;
+}
+
+section#linkPages > div > div > a{
+  color: #fff;
+  background: #001623;
+  font-family: 'dosis';
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: solid 0px #001623;
+  transition: 0.4s;
+}
+
+section#linkPages > div > div > a:hover{
+  background: #90cbb0;
+  color: #001623;
+  border-bottom: solid 5px #001623;
+    
 }
 
 footer{
