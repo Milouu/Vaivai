@@ -546,7 +546,7 @@ span.highlighted{
 
 #resultatQuizz {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 #resultatQuizz p {
