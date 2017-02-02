@@ -97,6 +97,10 @@ h1, h2, h3, h4, h5, h5 {
   margin-top: 0px;
 }
 
+.dropdown.menu li {
+  transition: 0.4s;
+}
+
 .dropdown.menu > li > a {
   padding: 0 10px;
   line-height: 50px;
