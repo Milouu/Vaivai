@@ -316,7 +316,9 @@ main #hashtag {
 
 .maSlide > img {
   min-width: 100%;
+  max-width: none;
   min-height: 100%;
+  max-height: none;
   height: auto;
   width: auto;
 }
@@ -326,7 +328,6 @@ main #hashtag {
   font-family: 'dosis';
   position : absolute;
   bottom : 0;
-  padding: 0;
   height: 100px;
   width: 100%;
   background : rgba(144, 203, 176, 0.7);
