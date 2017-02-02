@@ -85,10 +85,10 @@ function checkReponse(i, reponseQuestion) {
 }
 
 function twitterChange(bonnesReponses){
-$('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? J'ai eu "+bonnesReponses+" bonnes réponses au quizz !");
+  $('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? J'ai eu "+bonnesReponses+" bonnes réponses au quizz !");
   console.log("c'est bon - "+bonnesReponses);
-    var testtweet = $('#twittquizz').attr('data-text')
-    console.log(testtweet);
+  var testtweet = $('#twittquizz').attr('data-text');
+  console.log(testtweet);
 }
 
 // JAUGE HUMANITAIRE
