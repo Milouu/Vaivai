@@ -63,13 +63,10 @@ $(document).ready(function(){
 // QUIZZ
 var solutions = [true, true, false, true, false, false];
 var bonnesReponses = 0;
-var quizzScore = {score: 0};
 function checkReponse(i, reponseQuestion) {
   if (reponseQuestion == solutions[i]) {
     $('#bonneReponse'+i).toggleClass('cache');
     bonnesReponses++;
-    quizzScore.score = bonnesReponses;
-    console.log(quizzScore.score);
   } else {
     $('#mauvaiseReponse'+i).toggleClass('cache');
   }
@@ -85,12 +82,6 @@ function checkReponse(i, reponseQuestion) {
     $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes un #CocoAddict, bravo !");
   }
 }
-
-
-$('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? J'ai eu " + quizzScore.score + " bonnes réponses au quizz !");
-console.log("c'est bon - "+quizzScore.score);
-var testtweet = $('#twittquizz').attr('data-text');
-console.log(testtweet);
 
 // JAUGE HUMANITAIRE
 var g1 = new JustGage({
