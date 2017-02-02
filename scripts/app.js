@@ -81,17 +81,17 @@ function checkReponse(i, reponseQuestion) {
   } else {
     $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes un #CocoAddict, bravo !");
   }
-  twi(bonnesReponses);
+  twitterChange(bonnesReponses);
 }
 
-function twi(bonnesReponses){
+function twitterChange(bonnesReponses){
 $('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? J'ai eu "+bonnesReponses+" bonnes réponses au quizz !");
   console.log("c'est bon - "+bonnesReponses);
     var testtweet = $('#twittquizz').attr('data-text')
     console.log(testtweet);
 }
 
-// JAUGE
+// JAUGE HUMANITAIRE
 var g1 = new JustGage({
   id: "g1",
   value: Math.floor(Math.random()*1000),
@@ -106,5 +106,4 @@ var g1 = new JustGage({
   levelColors: ["#001623"],
   relativeGaugeSize: true,
   titlePosition: "above"
-
 });

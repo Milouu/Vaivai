@@ -368,6 +368,17 @@ section#linkPages > div > div{
   margin: 50px 0;
 }
 
+@media screen and (max-width: 640px) {
+  #resultatQuizz + section#linkPages > div > div {
+    margin: 20px auto;
+  }
+}
+
+section#linkPages {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 section#linkPages > div > div > a{
   color: #fff;
   background: #001623;
