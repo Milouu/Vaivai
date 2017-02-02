@@ -470,7 +470,7 @@ footer h3{
 
 /****************************
 
-      PAGE CULTURE COCO
+      PAGE QUIZZ COCO
 
 *****************************/
 
@@ -543,16 +543,13 @@ span.highlighted{
   color: #ed237a;
 }
 
-h3.adecouvriraussi{
-  height: 1px;
-  width: 100%;
-  text-align: center;
+#resultatQuizz {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
-.catchphrase{
-  font-family: "dosis";
+#resultatQuizz p {
   text-align: center;
-  margin-top: 40px;
 }
 
 /*******************

@@ -19,7 +19,11 @@ function checkReponse(i, reponseQuestion) {
   $('#imageQuizz'+i).toggleClass('cache');
   $('.boutonQuizz'+i).toggleClass('cache');
   if (bonnesReponses < 3) {
-    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous n'êtes pas encore un <span class='hashtag'>#CocoAddict</span>");
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous n'êtes pas encore un #CocoAddict !");
+  } else if (bonnesReponses < 5) {
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous y êtes presque un #CocoAddict !");
+  } else {
+    $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous un #CocoAddict, bravo ! !");
   }
 }
 
