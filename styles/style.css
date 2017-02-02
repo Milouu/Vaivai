@@ -507,6 +507,13 @@ div.funfacts > div.carte{
   height: 100%;
 }
 
+@media screen and (max-width: 640px) {
+  .carte {
+    margin: 5px 0;
+    padding-bottom: 75px !important;
+  }
+}
+
 div.funfacts > div.carte > p{
   padding: 0 10px;
 }
@@ -517,16 +524,14 @@ div.funfacts > div.carte > div{
   height: 50px;
 }
 
-div.funfacts > div.carte > div > input{
+div.funfacts > div.carte > div > input {
   text-align: center;
   display: inline-block;
   background: #001623;
   color: #fff;
   border: 0px;
-  box-sizing: border-box;
   padding: 5px 20px;
   width: 70px;
-  
 }
 
 div.funfacts .cache {
@@ -556,6 +561,20 @@ h3.adecouvriraussi{
 *******************/
 
 @-webkit-keyframes shake {
+	0% { -webkit-transform: translate(1px, 0.5px) rotate(0deg); }
+	10% { -webkit-transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+	20% { -webkit-transform: translate(-1.5px, 0px) rotate(0.5deg); }
+	30% { -webkit-transform: translate(0px, 0.5px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(0.5deg); }
+	50% { -webkit-transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+	60% { -webkit-transform: translate(-1.5px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(1px, 1px) rotate(-0.5deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(0.5deg); }
+	90% { -webkit-transform: translate(1px, 1px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-0.5deg); }
+}
+
+keyframes shake {
 	0% { -webkit-transform: translate(1px, 0.5px) rotate(0deg); }
 	10% { -webkit-transform: translate(-0.5px, -1px) rotate(-0.5deg); }
 	20% { -webkit-transform: translate(-1.5px, 0px) rotate(0.5deg); }
