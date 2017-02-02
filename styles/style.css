@@ -414,14 +414,19 @@ footer h3{
   padding: 30px 0;
 }
 
-.fondBois h1 {
-  text-align: center;
-}
-
-.produit h3 {
+.produit h3{
   text-align: center;
   font-size: 20px;
   margin-top: 5px;
+}
+
+.fondBois h1 {
+  text-align: center;
+  background-size: contain;
+}
+
+.gamme h2 {
+  text-align: center;
 }
 
 .gamme {
@@ -468,6 +473,11 @@ footer h3{
       PAGE CULTURE COCO
 
 *****************************/
+.imgbg{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
 
 @font-face {
     font-family: "Big Bimbo";
@@ -504,8 +514,6 @@ span.highlighted{
 }
 
 h3.adecouvriraussi{
-  border: none;
-  background-color: #ed237a;
   height: 1px;
   width: 100%;
   text-align: center;
