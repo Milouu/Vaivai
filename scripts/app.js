@@ -25,6 +25,7 @@ function checkReponse(i, reponseQuestion) {
   } else {
     $('#resultatQuizz > p').text(bonnesReponses + " bonnes réponses... Vous êtes un #CocoAddict, bravo !");
   }
+  $("div#resultatQuizz > a").attr('data-text', 'swag');
 }
 
 $(document).ready(function(){
