@@ -5,7 +5,7 @@ setTimeout('$(".loadingTree").fadeOut(300);',900);
 $(document).foundation();
 
 // QUIZZ
-var solutions = [true, false, true];
+var solutions = [true, true, false, true, false, false];
 var bonnesReponses = 0;
 function checkReponse(i, reponseQuestion) {
   if (reponseQuestion == solutions[i]) {
