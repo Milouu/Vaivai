@@ -88,9 +88,6 @@ function checkReponse(i, reponseQuestion) {
 
 
 $('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? J'ai eu " + quizzScore.score + " bonnes réponses au quizz !");
-console.log("c'est bon - "+quizzScore.score);
-var testtweet = $('#twittquizz').attr('data-text');
-console.log(testtweet);
 
 // JAUGE HUMANITAIRE
 var g1 = new JustGage({
