@@ -1,8 +1,22 @@
-// ANIMATIONS CHARGEMENT
+// ANIMATION CHARGEMENT
 $(".emptyDiv").animate({"top": "-100%"},1000);
-setTimeout('$(".loadingTree").fadeOut(300);',700);
+setTimeout('$(".loadingTree").fadeOut(300);',900);
 
 $(document).foundation();
+
+// QUIZZ
+var solutions = [true, false, true];
+function checkReponse(i, reponseQuestion) {
+  if (reponseQuestion == solutions[i]) {
+    // BRAVO
+    window.alert('BRAVO');
+  } else {
+    // T'ES NUL
+    window.alert('NUL');
+  }
+  //$('.responseQuizz').toggleClass('cache');
+  //$('.questionQuizz').toggleClass('cache');
+}
 
 $(document).ready(function(){
   // DÉFILEMENT HEADER
