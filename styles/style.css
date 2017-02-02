@@ -160,9 +160,8 @@ header#header h1 br {
 
 header#header #truckContainer {
   position: absolute;
-  /* background pour forcer à ne pas collapser */
   height: 300px;
-  width: 500px;
+  max-width: 75%;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -179,9 +178,8 @@ header#header #truck {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 500px;
   height: auto;
-  width: auto;
-  max-width: 500px;
   -webkit-animation-name: shake;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin: 0% 5%;
@@ -200,8 +198,13 @@ header#header #truck {
     height: 400px;
   }
 
+  header#header h1 {
+    width: 80%;
+  }
+
   #truckContainer, #truckContainer div, #truckContainer img {
     max-height: 200px;
+    max-width: 100%;
   }
 }
 
@@ -373,7 +376,7 @@ section#linkPages > div > div > a:hover{
   background: #90cbb0;
   color: #001623;
   border-bottom: solid 5px #001623;
-    
+
 }
 
 footer{
