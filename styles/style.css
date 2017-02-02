@@ -482,6 +482,7 @@ footer h3{
 
 .cultureHeader {
   background: url("../images/cocotierBG.png");
+  padding-bottom: 30px;
 }
 
 .cultureHeader h1{
@@ -492,30 +493,44 @@ footer h3{
 }
 
 div.funfacts{
-  margin-top: 20px;
-  height: auto;
+  margin: 20px 0;
 }
 
-div.funfacts > p{
+div.funfacts > div.carte{
   color: #001623;
-  background: url("../images/bois.jpg");
+  background: #fff;
   background-size: cover;
-  padding: 20px;
-  border-bottom: solid 10px #001623;
+  padding: 40px 0 30px 0;
+  border-bottom: solid 10px #90cbb0;
   border-radius: 5px;
+  text-align: center;
+  height: 100%;
+}
+
+div.funfacts > div.carte > p{
+  padding: 0 10px;
+}
+
+div.funfacts > div.carte > div{
+  text-align: center;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+div.funfacts > div.carte > div > input{
+  text-align: center;
+  display: inline-block;
+  background: #001623;
+  color: #fff;
+  border: 0px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  width: 70px;
+  
 }
 
 div.funfacts .cache {
   display: none;
-}
-
-div.funfacts input {
-  box-sizing: border-box;
-  position: static;
-}
-
-div.funfacts:nth-child(2n+2) > p{
-  border-color: #90cbb0;
 }
 
 span.highlighted{

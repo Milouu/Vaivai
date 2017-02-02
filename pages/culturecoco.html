@@ -46,42 +46,122 @@
     <!-- QUIZZ -->
     <main class="cultureHeader">
       <h1>Êtes-vous incocollable ?</h1>
-      <div class="row">
-        <div class="funfacts columns small-12 medium-4">
-          <p class="questionQuizz">
-            La noix de coco est-elle un fruit ?
-          </p>
-          <p class="reponseQuizz cache">
-            La noix de coco n'est pas vraiment une noix, mais un <span class="highlighted">fruit.</span>
-          </p>
-          <input class="boutonQuizz small-6" id="clickMe" type="button" value="Vrai" onclick="checkReponse(0, true)"/>
-          <input class="boutonQuizz small-6" id="clickMe" type="button" value="Faux" onclick="checkReponse(0, false)"/>
+      <div class="row" data-equalizer=questions>
+        <div class="funfacts columns small-12 medium-6 large-4" data-equalizer-watch="questions">
+          <div class="carte">
+            <img id="imageQuizz0" src="../images/favicon.ico">
+            <h5 id="bonneReponse0" class="cache">bonne réponse</h5>
+            <h5 id="mauvaiseReponse0" class="cache">mauvaise réponse</h5>
+            <p id="question0">
+              La noix de coco est un fruit.
+            </p>
+            <p class="cache" id="reponse0" >
+              La noix de coco n'est pas vraiment une noix, mais un <span class="highlighted">fruit.</span>
+            </p>
+            <div class="columns small-6 boutonQuizz0">
+              <input id="clickMe" type="button" value="Vrai" onclick="checkReponse(0, true)"/>
+            </div>
+            <div class="column small-6 boutonQuizz0">
+              <input id="clickMe" type="button" value="Faux" onclick="checkReponse(0, false)"/>
+            </div>
+          </div>
         </div>
-        <div class="funfacts columns small-12 medium-4">
-          <p>
-            Les noix de coco peuvent flotter sur de longues distances à travers l'océan, ainsi on peut parfois voir des palmiers planter leur racines aussi loin que la <span class="highlighted">Scandinavie</span>.
-          </p>
+        <div class="funfacts columns small-12 medium-6 large-4" data-equalizer-watch="questions">
+          <div class="carte">
+            <img id="imageQuizz1" src="../images/favicon.ico">
+            <h5 id="bonneReponse1" class="cache">bonne réponse</h5>
+            <h5 id="mauvaiseReponse1" class="cache">mauvaise réponse</h5>
+            <p id="question1">
+              La noix de coco flotte.
+            </p>
+            <p class="cache" id="reponse1" >
+              Les noix de coco peuvent flotter sur de longues distances, on peut donc retrouver des palmiers en <span class="highlighted">Scandinavie. </span>
+            </p>
+            <div class="columns small-6 boutonQuizz1">
+              <input id="clickMe" type="button" value="Vrai" onclick="checkReponse(1, true)"/>
+            </div>
+            <div class="column small-6 boutonQuizz1">
+              <input id="clickMe" type="button" value="Faux" onclick="checkReponse(1, false)"/>
+            </div>
+          </div>
         </div>
-        <div class="funfacts columns small-12 medium-4">
-          <p>
-            Les palmiers produisent des fruits pendant 15 à <span class="highlighted">60 ans</span>, et parfois même jusqu'à 80 ans lorsque les conditions sont idéales. L'âge maximale d'un palmier est de 120 ans.
-          </p>
+        <div class="funfacts columns small-12 medium-6 large-4" data-equalizer-watch="questions">
+          <div class="carte">
+            <img id="imageQuizz2" src="../images/favicon.ico">
+            <h5 id="bonneReponse2" class="cache">bonne réponse</h5>
+            <h5 id="mauvaiseReponse2" class="cache">mauvaise réponse</h5>
+            <p id="question2">
+              Le palmier le plus vieux a 200 ans
+            </p>
+            <p class="cache" id="reponse2" >
+              Dans de bonnes condition un palmier produit des fruits jusqu'à 80 ans ; quant au plus vieux d'entre eux, il n'a que <span class="highlighted">120 ans</span>
+            </p>
+            <div class="columns small-6 boutonQuizz2">
+              <input id="clickMe" type="button" value="Vrai" onclick="checkReponse(2, true)"/>
+            </div>
+            <div class="column small-6 boutonQuizz2">
+              <input id="clickMe" type="button" value="Faux" onclick="checkReponse(2, false)"/>
+            </div>
+          </div>
         </div>
-        <div class="funfacts columns small-12 medium-4">
-          <p>
-            Avez-vous déjà essayé l'acool de coco ? Cette boisson, appelée <span class="highlighted">"Lambanóg"</span>, est assez forte, biologique, et sans conservateurs !
-          </p>
+        <div class="funfacts columns small-12 medium-6 large-4" data-equalizer-watch="questions">
+          <div class="carte">
+            <img id="imageQuizz3" src="../images/favicon.ico">
+            <h5 id="bonneReponse3" class="cache">bonne réponse</h5>
+            <h5 id="mauvaiseReponse3" class="cache">mauvaise réponse</h5>
+            <p id="question3">
+              Il existe un alcool de noix de coco.
+            </p>
+            <p class="cache" id="reponse3" >
+              appelée <span class="highlighted">"Lambanóg"</span>, cette boisson est forte, biologique et sans conservateurs !
+            </p>
+            <div class="columns small-6 boutonQuizz3">
+              <input id="clickMe" type="button" value="Vrai" onclick="checkReponse(3, true)"/>
+            </div>
+            <div class="column small-6 boutonQuizz3">
+              <input id="clickMe" type="button" value="Faux" onclick="checkReponse(3, false)"/>
+            </div>
+          </div>
         </div>
-        <div class="funfacts columns small-12 medium-4">
-          <p>
-            Dans une plantation bien gérée, <span class="highlighted">9500</span> noix de cocos peuvent être cueillies par hectare et par an, et plus de 12 000 noix de cocos pour les plus vieilles plantations !
-          </p>
+        <div class="funfacts columns small-12 medium-6 large-4" data-equalizer-watch="questions">
+          <div class="carte">
+            <img id="imageQuizz4" src="../images/favicon.ico">
+            <h5 id="bonneReponse4" class="cache">bonne réponse</h5>
+            <h5 id="mauvaiseReponse4" class="cache">mauvaise réponse</h5>
+            <p id="question4">
+              Dans une plantation, on récolte 5000 noix de coco par an et par hectare.
+            </p>
+            <p class="cache" id="reponse4" >
+              La noix de coco n'est pas vraiment une noix, mais un <span class="highlighted">fruit.</span>
+            </p>
+            <div class="columns small-6 boutonQuizz4">
+              <input id="clickMe" type="button" value="Vrai" onclick="checkReponse(4, true)"/>
+            </div>
+            <div class="column small-6 boutonQuizz4">
+              <input id="clickMe" type="button" value="Faux" onclick="checkReponse(4, false)"/>
+            </div>
+          </div>
         </div>
-        <div class="funfacts columns small-12 medium-4">
-          <p>
-            Dans une plantation bien gérée, <span class="highlighted">9500</span> noix de cocos peuvent être cueillies par hectare et par an, et plus de 12 000 noix de cocos pour les plus vieilles plantations !
-          </p>
+        <div class="funfacts columns small-12 medium-6 large-4" data-equalizer-watch="questions">
+          <div class="carte">
+            <img id="imageQuizz5" src="../images/favicon.ico">
+            <h5 id="bonneReponse5" class="cache">bonne réponse</h5>
+            <h5 id="mauvaiseReponse5" class="cache">mauvaise réponse</h5>
+            <p id="question5">
+              La noix de coco est-elle un fruit ?
+            </p>
+            <p class="cache" id="reponse5" >
+              La noix de coco n'est pas vraiment une noix, mais un <span class="highlighted">fruit.</span>
+            </p>
+            <div class="columns small-6 boutonQuizz5">
+              <input id="clickMe" type="button" value="Vrai" onclick="checkReponse(5, true)"/>
+            </div>
+            <div class="column small-6 boutonQuizz5">
+              <input id="clickMe" type="button" value="Faux" onclick="checkReponse(5, false)"/>
+            </div>
+          </div>
         </div>
+
       </div>
     </main>
     <div class="divider"></div>
@@ -95,13 +175,13 @@
         <a href="https://www.facebook.com/vaivaifrance/" title="facebook"><img src="../images/social-4.svg" alt="facebook"></a>
         <a href="https://www.instagram.com/vaivaiconnexion/" title="instagram"><img src="../images/social-5.svg" alt="instagram"></a>
         <a href="https://fr.pinterest.com/vaivai/" title="pinterest"><img src="../images/social-6.svg" alt="pinterest"></a>
-    </div>
-    <h3>© 2017 Vaivai SAS</h3>
-  </footer>
-  <script type="text/javascript" src="../scripts/vendor/jquery.js"></script>
-  <script type="text/javascript" src="../scripts/vendor/what-input.js"></script>
-  <script type="text/javascript" src="../scripts/vendor/foundation.min.js"></script>
-  <script type="text/javascript" src="../scripts/vendor/slick.min.js"></script>
-  <script type="text/javascript" src="../scripts/app.js"></script>
-</body>
+      </div>
+      <h3>© 2017 Vaivai SAS</h3>
+    </footer>
+    <script type="text/javascript" src="../scripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="../scripts/vendor/what-input.js"></script>
+    <script type="text/javascript" src="../scripts/vendor/foundation.min.js"></script>
+    <script type="text/javascript" src="../scripts/vendor/slick.min.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+  </body>
 </html>

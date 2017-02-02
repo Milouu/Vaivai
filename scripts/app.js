@@ -8,14 +8,15 @@ $(document).foundation();
 var solutions = [true, false, true];
 function checkReponse(i, reponseQuestion) {
   if (reponseQuestion == solutions[i]) {
-    // BRAVO
-    window.alert('BRAVO');
+    $('#bonneReponse'+i).toggleClass('cache');
   } else {
-    // T'ES NUL
-    window.alert('NUL');
+    $('#mauvaiseReponse'+i).toggleClass('cache');
   }
-  //$('.responseQuizz').toggleClass('cache');
-  //$('.questionQuizz').toggleClass('cache');
+  $('#reponse'+i).toggleClass('cache');
+  $('#question'+i).toggleClass('cache');
+  $('#imageQuizz'+i).toggleClass('cache');
+  $('.boutonQuizz'+i).toggleClass('cache');
+  
 }
 
 $(document).ready(function(){
