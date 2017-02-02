@@ -209,6 +209,10 @@ header#header #truck {
   #truckContainer, #truckContainer div, #truckContainer img {
     max-height: 160px;
   }
+
+  iframe {
+    height: 300px;
+  }
 }
 
 
