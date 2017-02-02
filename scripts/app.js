@@ -6,9 +6,11 @@ $(document).foundation();
 
 // QUIZZ
 var solutions = [true, false, true];
+var bonnesReponses = 0;
 function checkReponse(i, reponseQuestion) {
   if (reponseQuestion == solutions[i]) {
     $('#bonneReponse'+i).toggleClass('cache');
+    bonnesReponses++;
   } else {
     $('#mauvaiseReponse'+i).toggleClass('cache');
   }
@@ -16,7 +18,9 @@ function checkReponse(i, reponseQuestion) {
   $('#question'+i).toggleClass('cache');
   $('#imageQuizz'+i).toggleClass('cache');
   $('.boutonQuizz'+i).toggleClass('cache');
-  
+  if (bonnesReponses < 3) {
+    $('#resultatQuizz > p)'.text(bonnesReponses" bonnes réponses... Vous n'êtes pas encore un <span class='hashtag'>#CocoAddict</span>");
+  }
 }
 
 $(document).ready(function(){
