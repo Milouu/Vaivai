@@ -60,7 +60,7 @@ $(document).ready(function(){
   }(document, "script", "twitter-wjs"));
 });
 
-// QUIZZ
+// QUIZZZ
 var solutions = [true, true, false, true, false, false];
 var bonnesReponses = 0;
 function checkReponse(i, reponseQuestion) {
@@ -83,12 +83,6 @@ function checkReponse(i, reponseQuestion) {
   }
 }
 
-<<<<<<< HEAD
-=======
-
-$('#twittquizz').attr('data-text', "Etes-vous un #CocoAddict ? Faites le quizz !");
-
->>>>>>> origin/gh-pages
 // JAUGE HUMANITAIRE
 var g1 = new JustGage({
   id: "g1",
