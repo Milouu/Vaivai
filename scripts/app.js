@@ -66,7 +66,7 @@ var g1 = new JustGage({
   value: Math.floor(Math.random()*1000),
   min: 0,
   max: 2500,
-  title: "Aidez nous à atteindre l'objectif de tweet !",
+  title: "Atteignons l'objectif de tweets !",
   titleFontColor: "#001623",
   titleFontFamily: "dosis",
   valueFontColor: "#001623",

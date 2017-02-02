@@ -42,6 +42,11 @@ img.imgtree {
 
 ***********/
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -160,9 +165,8 @@ header#header h1 br {
 
 header#header #truckContainer {
   position: absolute;
-  /* background pour forcer à ne pas collapser */
   height: 300px;
-  width: 500px;
+  max-width: 75%;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -179,9 +183,8 @@ header#header #truck {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 500px;
   height: auto;
-  width: auto;
-  max-width: 500px;
   -webkit-animation-name: shake;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin: 0% 5%;
@@ -200,14 +203,23 @@ header#header #truck {
     height: 400px;
   }
 
+  header#header h1 {
+    width: 80%;
+  }
+
   #truckContainer, #truckContainer div, #truckContainer img {
-    max-height: 200px;
+    max-height: 250px;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 410px) {
   #truckContainer, #truckContainer div, #truckContainer img {
     max-height: 160px;
+  }
+
+  iframe {
+    height: 300px;
   }
 }
 
@@ -369,7 +381,7 @@ section#linkPages > div > div > a:hover{
   background: #90cbb0;
   color: #001623;
   border-bottom: solid 5px #001623;
-    
+
 }
 
 footer{
@@ -402,14 +414,19 @@ footer h3{
   padding: 30px 0;
 }
 
-.fondBois h1 {
-  text-align: center;
-}
-
-.produit h3 {
+.produit h3{
   text-align: center;
   font-size: 20px;
   margin-top: 5px;
+}
+
+.fondBois h1 {
+  text-align: center;
+  background-size: contain;
+}
+
+.gamme h2 {
+  text-align: center;
 }
 
 .gamme {
@@ -456,6 +473,11 @@ footer h3{
       PAGE CULTURE COCO
 
 *****************************/
+.imgbg{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
 
 div.cultureHeader h1{
   text-align: center;
@@ -489,8 +511,6 @@ span.highlighted{
 }
 
 h3.adecouvriraussi{
-  border: none;
-  background-color: #ed237a;
   height: 1px;
   width: 100%;
   text-align: center;
@@ -509,15 +529,15 @@ h3.adecouvriraussi{
 *******************/
 
 @-webkit-keyframes shake {
-	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+	0% { -webkit-transform: translate(1px, 0.5px) rotate(0deg); }
+	10% { -webkit-transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+	20% { -webkit-transform: translate(-1.5px, 0px) rotate(0.5deg); }
+	30% { -webkit-transform: translate(0px, 0.5px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(0.5deg); }
+	50% { -webkit-transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+	60% { -webkit-transform: translate(-1.5px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(1px, 1px) rotate(-0.5deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(0.5deg); }
+	90% { -webkit-transform: translate(1px, 1px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-0.5deg); }
 }
